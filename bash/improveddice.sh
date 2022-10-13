@@ -11,16 +11,9 @@ dice1=$(( RANDOM % sides + min_value )) #  roll the dice using the variables for
 dice2=$(( RANDOM % sides +min_value))
 echo "rolling = $dice1 ,$dice2"
 # Task 2:
-sums=$(($dice1+$dice2 ))#  generate the sum of the dice
-echo "$sums"
+sum=$((dice1+dice2)) #  generate the sum of the dice
 #  generate the average of the dice
-
+average=$((sum/2))
 #  display a summary of what was rolled, and what the results of your arithmetic were
-echo "Summary   $dice1 ,$dice2 "
-# Tell the user we have started processing
-echo "Rolling..."
-# roll the dice and save the results
-die1=$(( RANDOM % 6 + 1))
-die2=$(( RANDOM % 6 + 1 ))
-# display the results
-echo "Rolled $die1, $die2"
+echo "Summary of dice rolled two time and got   $dice1 and ,$dice2  as a result and the sum of this is $sum and average is $average "
+
